@@ -35,7 +35,7 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 </table>
 <table width="100" border="0" cellspacing="1" cellpadding="1" align="center">
   <tr>
-    <td>從A~Z共X筆</td>
+    <td>從<?php echo ($startRow_Recordset1 + 1) ?>~<?php echo min($startRow_Recordset1 + $maxRows_Recordset1, $totalRows_Recordset1) ?>共<?php echo $totalRows_Recordset1 ?> 筆</td>
   </tr>
 </table>
 <table width="100" border="1" cellspacing="1" cellpadding="1" align="center">
