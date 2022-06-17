@@ -30,7 +30,7 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 <body>
 <table width="100" border="0" cellspacing="1" cellpadding="1" align="center">
   <tr>
-    <td>新增</td>
+    <td><a href="add.php">新增</a></td>
   </tr>
 </table>
 <table width="100" border="0" cellspacing="1" cellpadding="1" align="center">
