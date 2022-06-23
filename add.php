@@ -79,5 +79,6 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 </div>
 <input type="hidden" name="MM_insert" value="form1">
 </form>
+
 </body>
 </html>
