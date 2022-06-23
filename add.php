@@ -3,23 +3,27 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>無標題文件</title>
+<style>
+
+</style>
 </head>
 
 <body>
-<table width="100" border="1" cellspacing="1" cellpadding="1">
+<form name="form1">
+<div>
+<table width="100" border="1" cellspacing="1" cellpadding="1" align="center" style="margin-top:58px">
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>Name</td>
+    <td>Old</td>
+    <td>Addr</td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td><input type="text" name="Name" /></td>
+    <td><input type="text" name="Old" /></td>
+    <td><input type="text" name="Addr" /></td>
   </tr>
 </table>
-
+</div>
+</form>
 </body>
 </html>
