@@ -15,6 +15,8 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>無標題文件</title>
 </head>
+
+<body>
 <form name="form1">
 <table width="100" border="1" cellspacing="1" cellpadding="1" align="center" style="margin-top:58px">
   <tr>
@@ -35,7 +37,6 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
   </tr>
 </table>
 </form>
-<body>
 </body>
 </html>
 <?php
