@@ -115,7 +115,7 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
             <?php } // Show if not last page ?>
       </td>
     </tr>
-  </table>
+  </table> 
 </div>
 
 
