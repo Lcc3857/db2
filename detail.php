@@ -86,6 +86,7 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 </table>
 <input type="hidden" name="MM_update" value="form1">
 </form>
+
 </body>
 </html>
 <?php
