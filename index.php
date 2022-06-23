@@ -92,9 +92,31 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
         <?php } // Show if not last page ?></td>
 	<td><?php if ($pageNum_Recordset1 < $totalPages_Recordset1) { // Show if not last page ?>
 	    <a href="<?php printf("%s?pageNum_Recordset1=%d%s", $currentPage, $totalPages_Recordset1, $queryString_Recordset1); ?>">最後一頁</a>
-	    <?php } // Show if not last page ?></td>
+    <?php } // Show if not last page ?></td>
   </tr>
 </table>
+<div align="center">
+  <table border="0" width="50%" align="center">
+    <tr>
+      <td width="23%" align="center"><?php if ($pageNum_Recordset1 > 0) { // Show if not first page ?>
+            <a href="<?php printf("%s?pageNum_Recordset1=%d%s", $currentPage, 0, $queryString_Recordset1); ?>"><img src="First.gif" border=0></a>
+            <?php } // Show if not first page ?>
+      </td>
+      <td width="31%" align="center"><?php if ($pageNum_Recordset1 > 0) { // Show if not first page ?>
+            <a href="<?php printf("%s?pageNum_Recordset1=%d%s", $currentPage, max(0, $pageNum_Recordset1 - 1), $queryString_Recordset1); ?>"><img src="Previous.gif" border=0></a>
+            <?php } // Show if not first page ?>
+      </td>
+      <td width="23%" align="center"><?php if ($pageNum_Recordset1 < $totalPages_Recordset1) { // Show if not last page ?>
+            <a href="<?php printf("%s?pageNum_Recordset1=%d%s", $currentPage, min($totalPages_Recordset1, $pageNum_Recordset1 + 1), $queryString_Recordset1); ?>"><img src="Next.gif" border=0></a>
+            <?php } // Show if not last page ?>
+      </td>
+      <td width="23%" align="center"><?php if ($pageNum_Recordset1 < $totalPages_Recordset1) { // Show if not last page ?>
+            <a href="<?php printf("%s?pageNum_Recordset1=%d%s", $currentPage, $totalPages_Recordset1, $queryString_Recordset1); ?>"><img src="Last.gif" border=0></a>
+            <?php } // Show if not last page ?>
+      </td>
+    </tr>
+  </table>
+</div>
 
 
 </body>
